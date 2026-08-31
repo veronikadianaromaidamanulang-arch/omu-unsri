@@ -1,7 +1,10 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
+
 export default function MenungguVerifikasi() {
-  const nomorAdminWA = '6285179821611'; // ganti dengan nomor WA admin asli
+  const nomorAdminWA = '6285179821611';
+  const router = useRouter();
 
   return (
     <div
@@ -26,9 +29,13 @@ export default function MenungguVerifikasi() {
           textAlign: 'center',
         }}
       >
-        <div style={{ fontSize: '48px', marginBottom: '16px' }}>⏳</div>
+        <div style={{ fontSize: '48px', marginBottom: '16px' }}>
+          ⏳
+        </div>
 
-        <h2 style={{ marginTop: 0 }}>Menunggu Verifikasi</h2>
+        <h2 style={{ marginTop: 0 }}>
+          Menunggu Verifikasi
+        </h2>
 
         <p
           style={{
@@ -41,12 +48,13 @@ export default function MenungguVerifikasi() {
           akun disetujui.
         </p>
 
+        {/* HUBUNGI ADMIN */}
         <a
           href={`https://wa.me/${nomorAdminWA}`}
           target="_blank"
           rel="noopener noreferrer"
           style={{
-            display: 'inline-block',
+            display: 'block',
             marginTop: '20px',
             padding: '12px 24px',
             background: '#25D366',
@@ -58,6 +66,25 @@ export default function MenungguVerifikasi() {
         >
           Hubungi Admin
         </a>
+
+        {/* KEMBALI KE LOGIN */}
+        <button
+          onClick={() => router.push('/login')}
+          style={{
+            width: '100%',
+            marginTop: '10px',
+            padding: '12px 24px',
+            background: 'white',
+            color: '#555',
+            border: '1px solid #ddd',
+            borderRadius: '10px',
+            fontWeight: '600',
+            fontSize: '14px',
+            cursor: 'pointer',
+          }}
+        >
+          Kembali ke Login
+        </button>
       </div>
     </div>
   );
