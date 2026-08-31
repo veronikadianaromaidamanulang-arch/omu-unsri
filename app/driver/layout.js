@@ -73,7 +73,7 @@ export default function DriverLayout({ children }) {
   return (
     <div className="driver-app">
 
-      {/* ================= HEADER ================= */}
+      {/* HEADER */}
       <header className="header">
         <div className="header-inner">
 
@@ -95,32 +95,12 @@ export default function DriverLayout({ children }) {
         </div>
       </header>
 
-      {/* ================= CONTENT ================= */}
+      {/* CONTENT */}
       <main className="content">
 
         <section className="welcome">
           <p>Selamat datang kembali</p>
           <h1>{driver.nama}</h1>
-        </section>
-
-        {/* STATUS */}
-        <section className="status-card">
-
-          <div className="status-left">
-            <div className="status-indicator">
-              <span />
-            </div>
-
-            <div>
-              <div className="status-label">STATUS DRIVER</div>
-              <div className="status-title">Siap menerima order</div>
-            </div>
-          </div>
-
-          <div className="status-arrow">
-            ›
-          </div>
-
         </section>
 
         {/* PAGE CONTENT */}
@@ -130,7 +110,7 @@ export default function DriverLayout({ children }) {
 
       </main>
 
-      {/* ================= BOTTOM NAV ================= */}
+      {/* BOTTOM NAV */}
       <nav className="bottom-nav">
         <div className="bottom-nav-inner">
 
@@ -182,7 +162,7 @@ export default function DriverLayout({ children }) {
           position: sticky;
           top: 0;
           z-index: 50;
-          background: rgba(255,255,255,.96);
+          background: rgba(255, 255, 255, 0.96);
           backdrop-filter: blur(12px);
           border-bottom: 1px solid #eceeef;
         }
@@ -207,7 +187,6 @@ export default function DriverLayout({ children }) {
         .brand-logo {
           width: 36px;
           height: 36px;
-
           border-radius: 10px;
           background: #00b14f;
           color: white;
@@ -224,7 +203,7 @@ export default function DriverLayout({ children }) {
           font-size: 15px;
           line-height: 18px;
           font-weight: 750;
-          letter-spacing: -.2px;
+          letter-spacing: -0.2px;
         }
 
         .brand-subtitle {
@@ -243,7 +222,6 @@ export default function DriverLayout({ children }) {
         .profile-avatar {
           width: 36px;
           height: 36px;
-
           border-radius: 50%;
           background: #e9f8ef;
           color: #00a94f;
@@ -278,84 +256,8 @@ export default function DriverLayout({ children }) {
           margin: 0;
           font-size: 24px;
           line-height: 30px;
-          letter-spacing: -.6px;
+          letter-spacing: -0.6px;
           font-weight: 800;
-        }
-
-        /* STATUS CARD */
-
-        .status-card {
-          min-height: 88px;
-          padding: 18px;
-
-          background: white;
-          border: 1px solid #ebedef;
-          border-radius: 18px;
-
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-
-          box-shadow:
-            0 2px 8px rgba(0,0,0,.025);
-
-          margin-bottom: 22px;
-        }
-
-        .status-left {
-          display: flex;
-          align-items: center;
-          gap: 13px;
-        }
-
-        .status-indicator {
-          width: 42px;
-          height: 42px;
-
-          border-radius: 13px;
-          background: #eaf9f0;
-
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-
-        .status-indicator span {
-          width: 10px;
-          height: 10px;
-          background: #00b14f;
-          border-radius: 50%;
-
-          box-shadow: 0 0 0 5px rgba(0,177,79,.10);
-        }
-
-        .status-label {
-          font-size: 9px;
-          font-weight: 750;
-          letter-spacing: .08em;
-          color: #9a9ea3;
-          margin-bottom: 3px;
-        }
-
-        .status-title {
-          font-size: 14px;
-          font-weight: 700;
-          color: #202326;
-        }
-
-        .status-arrow {
-          width: 28px;
-          height: 28px;
-
-          border-radius: 50%;
-          background: #f5f6f7;
-
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          color: #9a9da1;
-          font-size: 20px;
         }
 
         /* PAGE */
@@ -374,7 +276,7 @@ export default function DriverLayout({ children }) {
 
           height: 76px;
 
-          background: rgba(255,255,255,.97);
+          background: rgba(255, 255, 255, 0.97);
           backdrop-filter: blur(14px);
 
           border-top: 1px solid #e9ebed;
@@ -470,7 +372,7 @@ export default function DriverLayout({ children }) {
             border-radius: 18px;
 
             box-shadow:
-              0 8px 30px rgba(0,0,0,.08);
+              0 8px 30px rgba(0, 0, 0, 0.08);
           }
 
           .bottom-nav-inner {
